@@ -86,10 +86,10 @@ nav.scrolled { border-bottom-color: var(--b1); }
 .tag { font-size: 12px; font-family: var(--mono); padding: 4px 10px; background: var(--s2); border: 1px solid var(--b1); border-radius: 20px; color: var(--m1); transition: all .15s; }
 .tag:hover { border-color: var(--acc); color: var(--acc); }
 
-/* PROJECTS */
-#projects { background: var(--s1); }
-#projects .inner { max-width: 1200px; margin: 0 auto; padding: 120px 80px; }
-.projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+/* Projects */
+#Projects { background: var(--s1); }
+#Projects .inner { max-width: 1200px; margin: 0 auto; padding: 120px 80px; }
+.Projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .proj-card { background: var(--bg); border: 1px solid var(--b1); border-radius: 12px; overflow: hidden; transition: all .3s; display: flex; flex-direction: column; }
 .proj-card:hover { border-color: var(--acc); transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,.5); }
 .proj-card.featured { grid-column: span 2; }
@@ -132,17 +132,17 @@ nav.scrolled { border-bottom-color: var(--b1); }
 .cert-name { font-size: 14px; font-weight: 600; margin-bottom: 3px; }
 .cert-issuer { font-size: 12px; color: var(--m1); font-family: var(--mono); }
 
-/* CONTACT */
-#contact { background: var(--s1); }
-#contact .inner { max-width: 1200px; margin: 0 auto; padding: 120px 80px; }
-.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start; }
-.contact-info { display: flex; flex-direction: column; gap: 16px; margin-top: 8px; }
-.contact-link { display: flex; align-items: center; gap: 16px; padding: 18px 20px; background: var(--bg); border: 1px solid var(--b1); border-radius: var(--r); transition: all .2s; }
-.contact-link:hover { border-color: var(--acc); transform: translateX(4px); }
+/* Contact */
+#Contact { background: var(--s1); }
+#Contact .inner { max-width: 1200px; margin: 0 auto; padding: 120px 80px; }
+.Contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start; }
+.Contact-info { display: flex; flex-direction: column; gap: 16px; margin-top: 8px; }
+.Contact-link { display: flex; align-items: center; gap: 16px; padding: 18px 20px; background: var(--bg); border: 1px solid var(--b1); border-radius: var(--r); transition: all .2s; }
+.Contact-link:hover { border-color: var(--acc); transform: translateX(4px); }
 .cl-icon { width: 40px; height: 40px; border-radius: 8px; background: var(--s2); display: flex; align-items: center; justify-content: center; font-size: 15px; font-family: var(--mono); font-weight: 600; color: var(--acc); flex-shrink: 0; }
 .cl-label { font-size: 11px; color: var(--m2); font-family: var(--mono); letter-spacing: .1em; margin-bottom: 2px; }
 .cl-val { font-size: 14px; font-weight: 500; }
-.contact-form { display: flex; flex-direction: column; gap: 16px; }
+.Contact-form { display: flex; flex-direction: column; gap: 16px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .form-group { display: flex; flex-direction: column; gap: 8px; }
 .form-group label { font-size: 12px; font-family: var(--mono); color: var(--m1); letter-spacing: .08em; }
@@ -173,9 +173,9 @@ footer { border-top: 1px solid var(--b1); padding: 32px 80px; display: flex; ali
   nav { padding: 18px 24px; } .nav-links, .nav-hire { display: none; } .hamburger { display: flex; }
   #hero { padding: 120px 24px 80px; } .scroll-hint { display: none; }
   .sec { padding: 80px 24px; } .sep { margin: 0 24px; }
-  .about-grid, .contact-grid { grid-template-columns: 1fr; }
-  #projects .inner, #contact .inner { padding: 80px 24px; }
-  .projects-grid { grid-template-columns: 1fr; } .proj-card.featured { grid-column: span 1; }
+  .about-grid, .Contact-grid { grid-template-columns: 1fr; }
+  #Projects .inner, #Contact .inner { padding: 80px 24px; }
+  .Projects-grid { grid-template-columns: 1fr; } .proj-card.featured { grid-column: span 1; }
   .certs-grid, .skills-grid { grid-template-columns: 1fr; } .hero-stats { gap: 32px; }
   .form-row { grid-template-columns: 1fr; } footer { padding: 24px; }
 }
@@ -254,13 +254,13 @@ footer { border-top: 1px solid var(--b1); padding: 32px 80px; display: flex; ali
 </section>
 <hr class="sep">
 
-<!-- PROJECTS -->
-<section id="projects">
+<!-- Projects -->
+<section id="Projects">
 <div class="inner">
   <div class="label reveal">Projects</div>
   <h2 class="sec-title reveal reveal-d1">Things I have built</h2>
-  <p class="sec-sub reveal reveal-d2">Seven projects across ML, AI, data engineering, and full-stack development - each solving a real-world problem.</p>
-  <div class="projects-grid">
+  <p class="sec-sub reveal reveal-d2">Seven Projects across ML, AI, data engineering, and full-stack development - each solving a real-world problem.</p>
+  <div class="Projects-grid">
 
     <div class="proj-card featured reveal">
       <div class="proj-top"><span class="proj-num">01 / 06</span><a class="proj-gh" href="https://github.com/pramod183/fruits-veg-cnn" target="_blank">GitHub</a></div>
@@ -390,24 +390,24 @@ footer { border-top: 1px solid var(--b1); padding: 32px 80px; display: flex; ali
 </section>
 <hr class="sep">
 
-<!-- CONTACT -->
-<section id="contact">
+<!-- Contact -->
+<section id="Contact">
 <div class="inner">
   <div class="label reveal">Contact</div>
   <h2 class="sec-title reveal reveal-d1">Let us work together</h2>
-  <p class="sec-sub reveal reveal-d2">Open to placement year opportunities, internships, and freelance ML/data projects in London.</p>
-  <div class="contact-grid">
+  <p class="sec-sub reveal reveal-d2">Open to placement year opportunities, internships, and freelance ML/data Projects in London.</p>
+  <div class="Contact-grid">
     <div>
       <p style="font-size:16px;color:var(--m1);line-height:1.85;margin-bottom:32px" class="reveal reveal-d2">I am actively seeking a <strong style="color:var(--tx)">12-month placement year</strong> in London in software engineering, machine learning, data science, or cloud engineering. If your team is building something interesting I would love to chat.</p>
-      <div class="contact-info reveal reveal-d3">
-        <a class="contact-link" href="mailto:pramodreddy181@gmail.com"><div class="cl-icon">@</div><div><div class="cl-label">Email</div><div class="cl-val">pramodreddy181@gmail.com</div></div></a>
-        <a class="contact-link" href="https://www.linkedin.com/in/pramodreddyb" target="_blank"><div class="cl-icon">in</div><div><div class="cl-label">LinkedIn</div><div class="cl-val">pramod-baddhipadugu</div></div></a>
-        <a class="contact-link" href="https://github.com/pramod183" target="_blank"><div class="cl-icon">GH</div><div><div class="cl-label">GitHub</div><div class="cl-val">github.com/pramod183</div></div></a>
-        <a class="contact-link" href="Pramod_Baddhipadugu_CV.pdf" download><div class="cl-icon">CV</div><div><div class="cl-label">Resume</div><div class="cl-val">Download CV (PDF)</div></div></a>
+      <div class="Contact-info reveal reveal-d3">
+        <a class="Contact-link" href="mailto:pramodreddy181@gmail.com"><div class="cl-icon">@</div><div><div class="cl-label">Email</div><div class="cl-val">pramodreddy181@gmail.com</div></div></a>
+        <a class="Contact-link" href="https://www.linkedin.com/in/pramodreddyb" target="_blank"><div class="cl-icon">in</div><div><div class="cl-label">LinkedIn</div><div class="cl-val">pramod-baddhipadugu</div></div></a>
+        <a class="Contact-link" href="https://github.com/pramod183" target="_blank"><div class="cl-icon">GH</div><div><div class="cl-label">GitHub</div><div class="cl-val">github.com/pramod183</div></div></a>
+        <a class="Contact-link" href="Pramod_Baddhipadugu_CV.pdf" download><div class="cl-icon">CV</div><div><div class="cl-label">Resume</div><div class="cl-val">Download CV (PDF)</div></div></a>
       </div>
     </div>
     <div class="reveal reveal-d3">
-      <form class="contact-form" id="contactForm" onsubmit="submitForm(event)">
+      <form class="Contact-form" id="ContactForm" onsubmit="submitForm(event)">
         <div class="form-row">
           <div class="form-group"><label>Name</label><input type="text" placeholder="Your name" required></div>
           <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com" required></div>
@@ -423,7 +423,7 @@ footer { border-top: 1px solid var(--b1); padding: 32px 80px; display: flex; ali
 </div>
 </section>
 
-<a class="fab" href="#contact">Hire Me</a>
+<a class="fab" href="#Contact">Hire Me</a>
 
 <footer>
   <span class="footer-copy">2025 Pramod Baddhipadugu - Built with HTML and CSS</span>
@@ -456,7 +456,7 @@ function submitForm(e) {
   btn.textContent = "Sending..."; btn.disabled = true;
   setTimeout(function() {
     document.getElementById("form-success").style.display = "block";
-    document.getElementById("contactForm").reset();
+    document.getElementById("ContactForm").reset();
     btn.textContent = "Send Message"; btn.disabled = false;
   }, 1200);
 }
